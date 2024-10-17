@@ -20,36 +20,35 @@ p {
 }
 
 .row {
-    display: flex; /* Используем flexbox для управления расположением элементов */
-    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
-    justify-content: center; /* Центрируем элементы по горизонтали */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /********** Desktop version **********/
 @media (min-width: 992px) {
     .col-item {
-        flex: 0 0 33.33%; /* Каждый элемент занимает одну треть ширины */
-        max-width: 33.33%; /* Максимальная ширина 33.33% */
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
     }
 }
 
 /********** Tablet version **********/
 @media (min-width: 768px) and (max-width: 991px) {
     .col-item {
-        flex: 0 0 50%; /* Первые два элемента занимают 50% */
-        max-width: 50%; /* Максимальная ширина 50% */
+        flex: 0 0 50%;
+        max-width: 50%;
     }
     .col-item:last-child {
-        flex: 0 0 100%; /* Последний элемент занимает всю ширину */
-        max-width: 100%; /* Максимальная ширина 100% */
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
 /********** Mobile version **********/
 @media (max-width: 767px) {
     .col-item {
-        flex: 0 0 100%; /* Каждый элемент занимает 100% */
-        max-width: 100%; /* Максимальная ширина 100% */
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
-
