@@ -1,0 +1,150 @@
+html {
+  font-size: 62.5%;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Comic Neue';
+  width: 100%;
+  min-height: 100vh;
+}
+
+/** HEADER **/
+#header-nav {
+  height: 80px;
+  background-color: #a0a0a0;
+  border: 3px solid black;
+  padding:0;
+}
+
+h1 { 
+  padding-top: 10px;
+  font-size: 34px;
+  color: black;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  text-align: left;
+  padding-left: 20px;
+}
+
+h2{
+  padding-top: 10px;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+  border: 3px solid black;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+  padding: 0;
+}
+
+#nav-list li {
+  padding-top: 0;
+  margin-top: -3px;
+}
+
+#aaa{
+  background-color: #a0a0a0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  color: black;
+  font-weight: bold;
+  }
+
+#nav-list .hidden-sm.hidden-md.hidden-lg {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#pika{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+#bbb{
+  margin-top: -20px;
+  font-weight: bold;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid black;
+}
+
+.navbar-header button.navbar-toggle {
+  margin-top: 15px; /* Установите значение отступа по вашему усмотрению */
+}
+.menu-block {
+  padding: 10px; /* Дополнительный отступ для контента блока */
+}
+br{
+  font-size: 25px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .navbar-brand {
+    padding-top: 15px;
+    height: 80px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-brand {
+    padding-top: 15px;
+    height: 80px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand {
+    padding-top: 15px;
+    height: 80px;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 15px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  #collapsable-nav {
+    display: none;
+
+  }
+
+  /* Показать меню при открытии */
+  #collapsable-nav.collapse.in {
+    display: block; /* Показать меню при открытии */
+  }
+
+  .menu-block {
+  transition: margin-top 0.3s ease;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+}
+  /* End Header */
